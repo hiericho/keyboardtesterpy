@@ -559,7 +559,6 @@ class KeyboardTesterApp:
     def _handle_key_release(self, event):
         if self.active_mode_instance and hasattr(self.active_mode_instance, 'on_key_release'):
             self.active_mode_instance.on_key_release(event)
-
 if __name__ == "__main__":
     root = tk.Tk()
     app = KeyboardTesterApp(root)
